@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 import discord, asyncio
-import os
 from os import system
-from dotenv import load_dotenv
 import shutil
 import subprocess
 
