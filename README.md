@@ -31,10 +31,10 @@ A straightforward bot that deletes your message based on discord.py's API.
 git clone https://github.com/josephistired/Discord-Message-Deletion-Bot
 
 # Enter into the directory
-cd Discord-Message-Deletion-Bot/
+cd Discord-Message-Deletion-Bot/Raspberry\ Pi\ Version/
 
 # Change the Configuration
-nano Discord-Message-Deletion-Bot/Raspberry\ Pi\ Version/bot.py
+nano bot.py
 
 ```
 
@@ -62,8 +62,6 @@ The great thing about a Raspberry Pi is that it can be ran 24/7. If you would to
 nohup python3 Discord-Message-Deletion-Bot/Raspberry\ Pi\ Version/bot.py
 
 ```
-
-
 
 ## License 
 
