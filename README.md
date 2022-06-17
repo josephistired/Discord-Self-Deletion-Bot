@@ -10,10 +10,6 @@ A straightforward bot that deletes your message based on discord.py's API.
 
 * [Requirements](#requirements)
 * [Installation](#installation)
-* [Configuration](#configuration)
-* [Running the Bot 24/7](#24/7-Running)
-* [License](#license)
-
 
 ## Installation
 
