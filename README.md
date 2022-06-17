@@ -13,9 +13,9 @@ A straightforward bot that deletes your message based on discord.py's API.
 
 ## Installation
 
-  For Windows, check releases for windows, and finally directions there!
+  [For Windows, click here](https://github.com/josephistired/Discord-Message-Deletion-Bot/releases/tag/Windows-Version)
 
-  For Raspberrypi, check releases!
+  [For Raspberrypi, click here](https://github.com/josephistired/Discord-Message-Deletion-Bot/releases/tag/Raspberry-Version)!
   
 ## License 
 
