@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-from pydoc import cli
 import discord, asyncio
 from os import system
 import shutil
@@ -58,7 +56,7 @@ async def on_message(message):
                                 await msg.delete()
                                 print(msg)
                         except:
-                             pass    
+                             pass
 
 @client.event
 async def on_message_delete(message):
@@ -67,6 +65,6 @@ async def on_message_delete(message):
             await print(f"Script Deleted = '{message.content}' in {message.channel}")
         except Exception as x:
             pass
-        
+
 # Bot Start
-client.run(token, bot=False)
+client.run(token, bot=False, reconnect=True)
