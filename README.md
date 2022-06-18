@@ -6,10 +6,6 @@ This bot has the ability to get you banned from discord, yet the chances of this
 
 A straightforward bot that deletes your message based on discord.py's API.
 
-## Table Of Contents
-
-* [Installation](#installation)
-
 # Installation
 
   [For Windows, click here](https://github.com/josephistired/Discord-Message-Deletion-Bot/releases/tag/Windows-Version)
