@@ -40,7 +40,7 @@ async def on_message(message):
         commands.append(message.content[z:])
         channel = message.channel
 
-        if commands[0] == '': # Set custom command to clear messages here!
+        if commands[0] == '0': # Set custom command to clear messages here!
                     if len(commands) == 1:
                         async for msg in channel.history(limit=9999):
                             if msg.author == client.user:
