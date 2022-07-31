@@ -18,8 +18,6 @@ async def on_ready():
     def ui():
         print()
         print()
-        print("https://github.com/josephistired/Discord-Message-Deletion-Bot")
-        print("THIS BOT HAS THE ABILITY TO GET YOU BANNED FROM DISCORD, YET THE CHANCES OF THIS HAPPENING ARE VERY LOW. I AM NOT RESPONSIBLE FOR YOU GETTING BANNED!")
         print("[-] User Logged In: {0} [-]".format(client.user).center(width))
         print("[-] ID = {0} [-]".format(client.user.id).center(width))
         print()

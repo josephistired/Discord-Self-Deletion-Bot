@@ -1,1 +1,1 @@
-py C:\bot.py
+py bot.py
