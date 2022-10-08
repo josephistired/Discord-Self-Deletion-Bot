@@ -1,115 +1,60 @@
-# Disclaimer
+![discord.py](https://miro.medium.com/max/929/1*B1q9uh0MO_2r9hAXBv88NQ.png)
 
-**_This bot has the ability to get you banned from discord, yet the chances of this happening are very low. I am not responsible for you getting banned!_**
+## Disclaimer
 
-# Discord-Messages-Deletion-Bot
+**_This bot has the ability to get your account banned on discord, yet the chances of this happening are very low. I am not responsible for you getting banned!_**
+
+## Discord-SelfBot
+
+A very simple discord bot that deletes your messages based on [discord.py](https://discordpy.readthedocs.io/en/stable/)!
 
 A straightforward bot that deletes your message based on discord.py's API.
 
-# Table Of Contents - Windows Version
-* [Requirements - Windows Version](#requirements-windows-version)
-* [Installation - Windows Version](#installation-windows-version)
-* [Configuration - Windows Version](#configuration-windows-version)
-* [Commands - Windows Version](#commands-windows-version)
-* [Startup - Windows Version](#startup-windows-version)
-* [License](#license)
+## Prerequisites
 
-# Table Of Contents - Raspberrypi Version
-* [Requirements - Raspberrypi Version](#requirements-raspberrypi-version)
-* [Installation - Raspberrypi Version](#installation-raspberrypi-version)
-* [Configuration - Raspberrypi Version](#configuration-raspberrypi-version)
-* [Commands - Raspberrypi Version](#commands-raspberrypi-version)
-* [Run 24/7 - Raspberrypi Version](#run-247-raspberrypi-version)
-* [License](#license)
+- Python 3.10.0 **[Python](https://www.python.org/downloads/release/python-3100/)**
+- Discord.py 1.7.3 **[discord.py](https://discordpy.readthedocs.io/en/latest/)**
 
-## Requirements Windows Version
+  Windows -> py -m pip install -U discord.py==1.7.3
 
-- [Python](https://www.python.org/downloads)
-- [discord.py](https://discordpy.readthedocs.io/en/latest/)
+  Raspberry Pi -> pip install -U discord.py==1.7.3
 
-  py -m pip install -U discord.py
+## ✅ Configuration
 
-## Installation Windows Version
+_Edit the bot.py file._
 
-  1. Download the zip file, and extract it to your **desktop**!
-  2. Go to [configuration](#configuration-windows-version)!
-  
-## Configuration Windows Version
+```py
+token = "Place Your Token Here!"
 
-  1. Open the bot.py ( windows folder... ) (**Use Notepad or any coding editing software**)
-  2. Paste your Discord Token into the token: "HERE" field!
-  3. Save the file... CTRL+S
-  4. Open the bot.bat file ( windows folder... )
-  5. and enjoy it working
-  6. how to [use](#commands-windows-version)!
-  
-## Commands Windows Version 
+if commands[0] == 'Place Custom Command Here To Clear Messages!':
+                    if len(commands) == 1:
 
- Typing **0** and sending it in chat/dm clears all your messages in said channel/dm!
- 
- Typing **cleardms** and sending it in chat/dm deletes all messages from every dm!
-
-## Startup Windows Version
-
-  well if you are a noob, and don't have a raspberry pi.. joking
-  
-  Here is how to run the bot on startup, and 24/7 (terminal window will be open 24/7)
-  
-  1. Open the bot.bat file in file explorer ( windows folder... )
-  2. Right click, press 'create shortcut'
-  3. Press the Windows logo key + R, type shell:startup, then select OK. This opens the Startup folder.
-  4. Copy and paste the bot.bat shortcut you just made to the startup folder.
-  5. Congrats man
-  
-## Requirements Raspberrypi Version
-
-- [Python](https://www.python.org/downloads)
-- [discord.py](https://discordpy.readthedocs.io/en/latest/)
-
-  python -m pip install -U discord.py
-
-## Installation Raspberrypi Version
-
-```
-# Clone the repository
-git clone https://github.com/josephistired/Discord-Message-Deletion-Bot
-
-# Enter into the directory
-cd Discord-Message-Deletion-Bot/Raspberry\ Pi\ Version/
-
-# Change the Configuration - See below
-nano bot.py
-
+if commands[0] == 'Place Custom Command Here To Clear All Dms!': ## Clears All DMs
+            for channel in client.private_channels:
 ```
 
-## Configuration Raspberrypi Version
+## 🖥️ Starting The Bot
 
-  1. Paste your Discord Token into the token: "HERE" field!
-  2. Save the file... CTRL+S THEN CTRL+X
-  ```
-  3. python Discord-Message-Deletion-Bot/Raspberry\ Pi\ Version/bot.py
-  ```
-  5. and enjoy it working
-  6. how to [use](#commands-raspberrypi-version)!
-  
-## Commands Raspberrypi Version 
+After editing the bot.py file, simply run the bot.bat program.
 
- Typing **0** and sending it in chat/dm clears all your messages in said channel/dm!
- 
- Typing **cleardms** and sending it in chat/dm deletes all messages from every dm!
+_If running this program on a raspberrypi follow all the steps above but to run the bot run the command **nohup python bot.py**!_
 
-## Run 24/7 Raspberrypi Version
+## Commands
 
-The great thing about a Raspberry Pi is that it can be running 24/7. If you would to run this bot 24/7, you can simply run the following command in the terminal:
+| Command  | Description                                          | Working                                                      |
+| -------- | ---------------------------------------------------- | ------------------------------------------------------------ |
+| 0        | Clears all messages in channel the command is ran in | <img src="./Assets/checkmark.gif" width="15%" height="15%"/> |
+| cleardms | Clears all of user's dms                             | <img src="./Assets/checkmark.gif" width="15%" height="15%"/> |
 
-```
+## Run on Startup
 
-# Here
-nohup python Discord-Message-Deletion-Bot/Raspberry\ Pi\ Version/bot.py
+_Windows Only_
 
+1. Open the bot.bat file in file explorer
+2. Right click, press 'create shortcut'
+3. Press the Windows logo key + R, type shell:startup, then select OK. This opens the Startup folder.
+4. Copy and paste the bot.bat shortcut you just made to the startup folder.
 
-```
-
-# License 
+# License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
