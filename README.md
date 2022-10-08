@@ -12,6 +12,7 @@ A very simple discord bot that deletes your messages based on [discord.py](https
 
 - Python 3.10.0 **[Python](https://www.python.org/downloads/release/python-3100/)**
 - Discord.py 1.7.3 **[discord.py](https://discordpy.readthedocs.io/en/latest/)**
+- Discord Account Token **[Guide](https://www.androidauthority.com/get-discord-token-3149920/)**
 
   Windows -> py -m pip install -U discord.py==1.7.3
 
