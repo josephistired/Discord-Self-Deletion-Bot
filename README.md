@@ -8,8 +8,6 @@
 
 A very simple discord bot that deletes your messages based on [discord.py](https://discordpy.readthedocs.io/en/stable/)!
 
-A straightforward bot that deletes your message based on discord.py's API.
-
 ## Prerequisites
 
 - Python 3.10.0 **[Python](https://www.python.org/downloads/release/python-3100/)**
