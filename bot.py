@@ -45,7 +45,7 @@ async def on_message(message):
                                 except Exception as x:
                                     pass
 
-        if commands[0] == 'cleardms': ## Clears All DMs
+        if commands[0] == 'cleardms': # Set custom command to clear all dms here!
             for channel in client.private_channels:
                 if isinstance(channel, discord.DMChannel):
                     async for msg in channel.history(limit=9999):
