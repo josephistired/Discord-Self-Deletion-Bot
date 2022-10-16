@@ -28,7 +28,7 @@ token = "Place Your Token Here!"
 if commands[0] == 'Place Custom Command Here To Clear Messages!':
                     if len(commands) == 1:
 
-if commands[0] == 'Place Custom Command Here To Clear All Dms!': ## Clears All DMs
+if commands[0] == 'Place Custom Command Here To Clear All Dms!':
             for channel in client.private_channels:
 ```
 
