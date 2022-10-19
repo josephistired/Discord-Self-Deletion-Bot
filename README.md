@@ -18,6 +18,14 @@ A very simple discord bot that deletes your messages based on [discord.py](https
 
   Raspberry Pi -> pip install -U discord.py==1.7.3
 
+## 🖥️ First Things To Do
+
+```
+pip install -U discord.py==1.7.3
+git clone https://github.com/josephistired/Discord-SelfBot.git
+cd Discord-SelfBot
+```
+
 ## ✅ Configuration
 
 _Edit the bot.py file._
