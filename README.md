@@ -42,7 +42,7 @@ if commands[0] == 'Place Custom Command Here To Clear All Dms!':
 
 
 # 🎊 Starting The Bot
-If you have successfully completed all the previous steps, the bot should now be ready to run. If you are on Windows, you can run the bot by opening the bot.bat file. If you are a raspberrpi, simply run the command **nohup node index.js**. Once the bot is running, you can enjoy its features! If you encounter any issues, you can create a pull request for help.
+If you have successfully completed all the previous steps, the bot should now be ready to run. If you are on Windows, you can run the bot by opening the bot.bat file. If you are a raspberrpi, simply run the command **nohup python bot.py**. Once the bot is running, you can enjoy its features! If you encounter any issues, you can create a pull request for help.
 
 
 # 💬 Commands
